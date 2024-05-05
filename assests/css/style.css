@@ -1,0 +1,284 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.bg-dark{
+    background-color:#16171b !important;
+}
+/* navbar code started */
+.navbar-dark {
+    border-bottom: 1px solid #ec008b;
+    padding: 0 !important;
+}
+.navbar-dark .navbar-brand{
+    padding: 0px;
+}
+.navbar-dark .container {
+    padding: 0 !important;
+}
+
+/* navbar code ended */
+/* bg section code started */
+#backGround {
+    height: 830px;
+    margin: 0;
+    padding: 0;
+    background-image: url('../coverbg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-bottom: 2px solid #ec008b;
+    position: relative;
+}
+
+#backGround .imgs {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#backGround .imgs .trager {
+    margin-top: 45px;
+    z-index: 10;
+}
+.txt h6{
+    letter-spacing: 2px;
+    font-weight: 100;
+}
+#backGround .imgs .light {
+    position: absolute;
+    top: 7%;
+}
+
+#backGround .btns .btn {
+    background-image: linear-gradient(to bottom, #660381, #C20084);
+    color: white;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    padding: 16px 79px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+/* popUp styling */
+#exampleModal .modal-dialog .modal-content {
+    padding: 10px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #51127f, #d70a84);
+
+}
+
+#exampleModal .modal-dialog .modal-content .btn-close {
+    color: white !important;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-body .btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#exampleModal .modal-dialog .modal-content .modal-body .btns .btn {
+    /* background-image: linear-gradient(to bottom,#ee27e4 , orange ); */
+    background-image: url('../button.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: transparent;
+    border: none;
+    outline: none;
+    padding: 16px 79px;
+    cursor: pointer;
+    font-weight: 100;
+    color: transparent;
+}
+
+/* popUp styling */
+/* slider code here */
+ #backGround #slide {
+    width: 960px;
+    position: relative;
+    margin-top: 4.5rem;
+}
+#backGround #stopAtSomePoint{
+    position: relative;
+}
+#backGround #stopAtSomePoint .line{
+    position: absolute;
+    top: -21px;
+    width: 2px;
+    height: 273px;
+    background-image: linear-gradient(to bottom, #660381, #C20084);
+    opacity: 0;
+}
+#backGround #stopAtSomePoint .line1{
+    left: -17px;
+}
+#backGround #stopAtSomePoint .line2{
+    right: -17px;
+}
+#backGround #slide .light {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+}
+
+#backGround #slide .wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    white-space: nowrap;
+    /* z-index: 10; */
+    padding: 2px;
+    background-color: #211b27;
+    border-radius: 35px;
+    border: 2px solid #c16b03;
+    opacity: .9;
+}
+.stopped{
+    background-color:#19161f;
+}
+
+#backGround #slide .box {
+    display: inline-block;
+    margin-left: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+    width: 240px;
+    height: 240px;
+    margin-top: 1.2em;
+    margin-bottom: 0.7em;
+}
+@media (min-width: 576px){
+    .modal-dialog {
+        max-width: 650px;
+    }
+}
+@media (max-width:990px) {
+
+    #backGround #slide .container {
+        width: 110%;
+        background-color: rgba(8, 8, 8, 0.884);
+        opacity: .9;
+        border-radius: 35px;
+        border: 3px solid gold;
+        position: relative;
+    }
+
+    #backGround #slide .box {
+        width: 220px;
+        height: 220px;
+        margin-left: 2px;
+    }
+}
+
+/* slider code here */
+
+#backGround .smoke {
+    position: absolute;
+    bottom: -14%;
+    /* width: 100%; */
+    left: 0;
+    z-index: 100;
+}
+
+/* card style started */
+#card {
+    background-image: url('../texture.jpg');
+    padding-top: 78px;
+    position: relative;
+}
+
+footer {
+    text-align: center;
+    background-color: #c00070;
+    color: white;
+    align-items: center;
+    padding: 3px;
+
+}
+
+footer h6 {
+    font-weight: bold;
+    font-size: 15px;
+    color: #f488c3;
+    font-weight: 100;
+}
+
+@media (max-width:899px) and (min-width:768px) {
+    #backGround .smoke {
+        bottom: -8%;
+    }
+
+    #card {
+        padding-top: 50px;
+    }
+    
+ 
+}
+
+@media (max-width:767px) and (min-width:570px) {
+    #backGround .imgs .light {
+        top: 30%;
+    }
+
+    #backGround .smoke {
+        bottom: -8%;
+    }
+    #backGround #slide .box {
+        margin-left: 0px;
+        width: 170px;
+        height: 170px;
+    }
+    #card {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width:575px) {
+    .navbar-dark .container img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .navbar-dark .container img:nth-child(1) {
+        width: 100px;
+        height: 70px;
+        object-fit: contain;
+    }
+    #backGround{
+        height: 760px;
+    }
+    #backGround #slide .box {
+        margin-left: 0px;
+        width: 130px;
+        height: 130px;
+        position: relative;
+        left: -50px;
+    }
+    #backGround .imgs .light {
+        top: -9%;
+        height: 350px;
+        width: 350px;
+    }
+
+    #backGround #slide {
+        width: 330px;
+        position: relative;
+    }
+    #backGround .smoke {
+        bottom: -5.5%;
+    }
+
+    #card {
+        padding-top: 40px;
+    }
+}
